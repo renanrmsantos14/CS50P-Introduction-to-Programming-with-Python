@@ -1,14 +1,22 @@
-# words = {"House", "Black", "White"} 
+words = {"thiago", "rodrigo", "arley"} 
 
-# def main():
-#     game()
+def main():
+    game()
 
-# def game():
-#     while True:
+def game():
+    while True:
+        asw = user_guess()
+        if asw:
+            break
+        else: print("Burro pra caraio")
+    print("Parabens Caralhoooooo")
         
-#     if guess in words:
-#         print
 
-# def user_guess():
-#     guess = str(input("Guess: "))
-#     return guess
+def user_guess():
+    guess = str(input("Chuta o nome de alguém da fatec: ")).strip().lower()
+    if guess in words:
+        return True
+    else:
+        return False
+main()
+
